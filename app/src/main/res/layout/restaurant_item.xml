@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_restaurant_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="AD"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/rb_restaurant_rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/iv_restaurant_photo"
+        android:layout_toRightOf="@+id/iv_restaurant_photo"
+        android:numStars="5"
+        tools:rating="5" />
+
+    <TextView
+        android:id="@+id/tv_restaurant_rating_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/rb_restaurant_rating"
+        android:layout_toRightOf="@+id/rb_restaurant_rating"
+        android:textSize="12sp"
+        tools:text="(999)" />
+
+    <TextView
+        android:id="@+id/tv_restaurant_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb_restaurant_rating"
+        android:layout_toRightOf="@id/iv_restaurant_photo"
+        android:layout_toEndOf="@id/iv_restaurant_photo"
+        android:textColor="#000"
+        android:textSize="18sp"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tv_restaurant_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_restaurant_title"
+        android:layout_toRightOf="@id/iv_restaurant_photo"
+        android:layout_toEndOf="@id/iv_restaurant_photo"
+        android:textSize="12sp"
+        tools:text="Myanmar" />
+
+    <TextView
+        android:id="@+id/tv_deliver_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        tools:text="delivers in 1 hr." />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>
