@@ -13,4 +13,9 @@ import android.app.Application;
 public class RestaurantApp extends Application {
 
     public static final String TAG = "RestaurantApp";
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
 }

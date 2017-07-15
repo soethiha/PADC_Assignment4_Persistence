@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">PADC_Assgin4</string>
+    <string name="app_name">PADC_Persistence</string>
+
+    <string name="content_authority">com.soethiha.padc_assignment4</string>
 </resources>

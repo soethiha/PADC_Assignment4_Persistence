@@ -38,14 +38,15 @@ public class RestaurantContract {
         public static final String TABLE_NAME = "restaurants";
 
         // Table Columns
+        // Note : - does not work in SQLite Column Name
         public static final String COLUMN_TITLE = "title";
-        public static final String COLUMN_ADDR_SHORT = "addr-short";
+        public static final String COLUMN_ADDR_SHORT = "addr_short";
         public static final String COLUMN_IMAGE = "image";
-        public static final String COLUMN_TOTAL_RATING_COUNT = "total-rating-count";
-        public static final String COLUMN_AVG_RATING_VALUE = "average-rating-value";
-        public static final String COLUMN_IS_AD = "is-ad";
-        public static final String COLUMN_IS_NEW = "is-new";
-        public static final String COLUMN_LEAD_TIME_IN_MIN = "lead-time-in-min";
+        public static final String COLUMN_TOTAL_RATING_COUNT = "total_rating_count";
+        public static final String COLUMN_AVG_RATING_VALUE = "average_rating_value";
+        public static final String COLUMN_IS_AD = "is_ad";
+        public static final String COLUMN_IS_NEW = "is_new";
+        public static final String COLUMN_LEAD_TIME_IN_MIN = "lead_time_in_min";
 
         // Uri Builder
         public static Uri buildRestaurantUri(long id) {
